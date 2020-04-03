@@ -1,0 +1,27 @@
+// colors
+$darkNavy:   #171E29;
+$charcoal:   #232d3d;
+$sherpaTeal: #14c4ce;
+$lightBlue:  #65C8CE;
+  $highlight: lighten($lightBlue, 30%);
+$sherpaBlue: #235bed;
+  $blueHighlight: lighten($sherpaBlue, 35%);
+$ghostBlue:  #f3f6ff;
+$coolGray:   #ecf1fd;
+$yellow:     #ffc344;
+  $yellowHighlight: lighten($yellow, 30%);
+$warning:    #FFBA28;
+$orange:     #FF8646;
+  $orangeHighlight: lighten($orange, 30%);
+$green:      #16CE16;
+  $greenHighlight: lighten($green, 50%);
+$purple:     #8B48E0;
+$red:        #ff0000;
+  $redHighlight: lighten($red, 40%);
+$darkGray:   #747474;
+$gray:       #B5B5B5;
+$mediumGray: #d8d8d8;
+$lightGray:  #f3f3f3;
+$white:      #ffffff;
+
+$padUnit: 1.5rem;

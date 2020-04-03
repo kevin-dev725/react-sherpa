@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Small Button with Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1173.000000, -5194.000000)" id="Small-Button-with-Icon">
+            <g transform="translate(1173.000000, 5193.242572)">
+                <g id="Group-5-Copy-4">
+                    <circle id="Oval" fill="#235BED" cx="19.5641231" cy="20.4358769" r="19.5641231"></circle>
+                    <path d="M29.336518,12.9736846 L9.90356266,19.9962622 C9.54301025,20.1273722 9.48155245,20.6108402 9.79703581,20.8238939 L12.701941,22.8069321 L25.886687,15.8540067 L14.7259511,24.1876839 L14.7259511,27.5637656 C14.7259511,27.793208 14.9840739,27.9325124 15.1766416,27.8054996 L17.6349535,26.1748194 L20.0563907,27.8259855 C20.2776388,27.9775814 20.5808306,27.9120264 20.7242321,27.682584 L29.512697,13.1908355 C29.5864464,13.0720171 29.467628,12.9245184 29.336518,12.9736846 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

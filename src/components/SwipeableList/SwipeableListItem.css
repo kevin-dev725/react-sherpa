@@ -1,0 +1,43 @@
+.ListItem {
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+}
+
+.BouncingListItem {
+  transition: transform 0.3s ease-out;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+}
+
+.Background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+  background: var(--gray);
+}
+@media (min-width: 768px) {
+  .Background {
+    background: transparent;
+  }
+}
+
+.Wrapper {
+  position: relative;
+  transition: max-height 0.3s ease;
+  max-height: 1000px;
+  transform-origin: top;
+  overflow: hidden;
+  width: 100%;
+  pointer-events: none;
+}
+.Wrapper .action {pointer-events: all;}

@@ -1,0 +1,298 @@
+@import "./variables.scss";
+@import "./bootstrap-overrides.scss";
+
+// spacing
+@function pad($num,$padUnit: $padUnit) {
+  $padMult: $padUnit / 3;
+  $pad: $num * $padMult;
+  @return $pad;
+}
+
+:root {
+  // Colors
+  --darkNavy:        #{$darkNavy};
+  --charcoal:        #{$charcoal};
+  --sherpaTeal:      #{$sherpaTeal};
+  --sherpaBlue:      #{$sherpaBlue};
+  --ghostBlue:       #{$ghostBlue};
+  --yellow:          #{$yellow};
+  --yellowHighlight: #{$yellowHighlight};
+  --orange:          #{$orange};
+  --orangeHighlight: #{$orangeHighlight};
+  --warning:         #{$warning};
+  --green:           #{$green};
+  --greenHighlight:  #{$greenHighlight};
+  --purple:          #{$purple};
+  --red:             #{$red};
+  --redHighlight:    #{$redHighlight};
+  --darkGray:        #{$darkGray};
+  --gray:            #{$gray};
+  --mediumGray:      #{$mediumGray};
+  --lightGray:       #{$lightGray};
+  --white:           #{$white};
+  --lightBlue:       #{$lightBlue};
+  --highlight:       #{$highlight};
+  --blueHighlight:   #{$blueHighlight};
+  --coolGray:        #{$coolGray};
+
+  --xpad: var(--pad3);
+  --ypad: var(--pad3);
+  --xypad: var(--ypad) var(--xpad);
+  @media (min-width: 768px) {
+    --xpad: var(--pad5);
+    --ypad: var(--pad4);
+    --xypad: var(--ypad) var(--xpad);
+  }
+  /* Gradients */
+  --tealBlueGradient: linear-gradient(
+    135deg,
+    var(--sherpaTeal),
+    var(--sherpaBlue)
+  );
+  --tealBlueGradientFlip: linear-gradient(
+    -45deg,
+    var(--sherpaTeal),
+    var(--sherpaBlue)
+  );
+
+  --sherpaBlueGradient: linear-gradient(
+    135deg,
+    #4888FF,
+    var(--sherpaBlue)
+  );
+  --sherpaBlueGradientFlip: linear-gradient(
+    -45deg,
+    #4888FF,
+    var(--sherpaBlue)
+  );
+
+  --sherpaTealGradient: linear-gradient(
+    135deg,
+    #45DFD7,
+    var(--sherpaTeal)
+  );
+  --sherpaTealGradientFlip: linear-gradient(
+    -45deg,
+    #45DFD7,
+    var(--sherpaTeal)
+  );
+
+  --warningGradient: linear-gradient(
+    135deg,
+    var(--yellow),
+    var(--orange)
+  );
+  --warningGradientFlip: linear-gradient(
+    -45deg,
+    var(--yellow),
+    var(--orange)
+  );
+}
+// Fonts
+@font-face {
+  font-family: "Lato";
+  src:
+    local("Lato"),
+    local("Lato Regular"),
+    url("../../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    local("Lato-Bold"),
+    local("Lato Bold"),
+    url("../../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    local("Lato-Black"),
+    local("Lato Black"),
+    url("../../fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Heading and text
+.fw-bold {font-weight: 700 !important;}
+.fw-regular {font-weight: 400 !important;}
+.fw-black {font-weight: 900 !important;}
+
+body,html {
+  font-family: "Lato";
+  font-size: 16px;
+  font-size: calc(10px + 1.5vw);
+
+  @media (min-width: 768px) {
+    font-size: calc(2px + 1vw);
+    background: var(--ghostBlue);
+
+    $padUnit: 1.5rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: calc(2px + 16px);
+  }
+}
+
+h1,h2,h3,
+.textXL,.textL,.textM,.textS,.textXS {
+  font-family: "Lato";
+}
+h1 {
+  /* 40px */
+  font-size: 2.5rem;
+  font-size: calc(3vw + 1rem);
+  line-height: 1.25;
+  font-weight: 900 !important;
+  @media(min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media(min-width: 1800px) {
+    font-size: 2.5rem;
+  }
+}
+h2 {
+  /* 30px */
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 900;
+
+}
+h3 {
+  /* 24px */
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 900;
+
+}
+.textXL {
+  /* 20px */
+  font-size: 1.25rem;
+  line-height: 1.2;
+  hyphens: auto;
+}
+.textL {
+  /* 18px */
+  font-size: 1.125rem;
+  line-height: 1.22;
+  hyphens: auto;
+}
+.textM {
+  /* 16px */
+  font-size: 1rem;
+  line-height: 1.25;
+  hyphens: auto;
+}
+.textS {
+  /* 14px */
+  font-size: .875rem;
+  line-height: 1.29;
+  hyphens: auto;
+}
+.textXS {
+  /* 12px */
+  font-size: .75rem;
+  line-height: 1.33;
+  hyphens: auto;
+}
+.gray {
+  color: $gray;
+}
+.o-100 {
+  opacity: 1 !important;
+}
+.darkGray {
+  color: $darkGray;
+}
+.blue {
+  color: $sherpaBlue;
+}
+ul {
+  list-style: none;
+  &.bulleted { list-style: disc; }
+}
+input,select,option {
+  cursor: pointer;
+}
+label.required {
+  &:after {
+    content: "*";
+    color: var(--sherpaTeal);
+  }
+}
+.disabled,[disabled="true"] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+:root {
+  --padUnit: #{$padUnit};
+
+  --pad1: #{pad(1)};
+  --pad2: #{pad(2)};
+  --pad3: #{pad(3)};
+  --pad4: #{pad(4)};
+  --pad5: #{pad(5)};
+  --pad6: #{pad(6)};
+  --pad7: #{pad(7)};
+  --pad8: #{pad(8)};
+  --pad9: #{pad(9)};
+}
+
+.icon, svg {
+  transition: transform .15s;
+}
+
+#root > .displayedData {
+  display: flex;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.no-br {
+  border-radius: 0 !important;
+}
+
+.bb-1 {
+  border-bottom: 1px solid var(--mediumGray);
+}
+
+.h-100 {
+  height: 100%;
+}
+
+// custom checkbox
+.custom-checkbox {
+  --leftPad: 1.8rem;
+  --boxSize: 1.25rem;
+
+  padding: var(--pad1) 0 var(--pad1) var(--leftPad);
+  font-size: 1.2rem;
+
+  .custom-control-input {
+    width: var(--leftPad);
+    height: var(--leftPad);
+  }
+  .custom-control-label {
+    &:after,
+    &:before {
+      left: calc(0rem - var(--leftPad));
+      width: var(--boxSize);
+      height: var(--boxSize);
+    }
+  }
+  .custom-control-input:checked {
+    & ~ .custom-control-label::before {
+      background: var(--sherpaBlue);
+    }
+    & ~ .custom-control-label {
+      font-weight: 900;
+    }
+  }
+}
